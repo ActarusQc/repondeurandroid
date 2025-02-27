@@ -1,0 +1,85 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.repondeur"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+8-->D:\Daniel\repondeur\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->D:\Daniel\repondeur\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+11-->D:\Daniel\repondeur\app\src\main\AndroidManifest.xml:5:5-75
+11-->D:\Daniel\repondeur\app\src\main\AndroidManifest.xml:5:22-72
+12    <uses-permission android:name="android.permission.ANSWER_PHONE_CALLS" />
+12-->D:\Daniel\repondeur\app\src\main\AndroidManifest.xml:6:5-77
+12-->D:\Daniel\repondeur\app\src\main\AndroidManifest.xml:6:22-74
+13    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+13-->D:\Daniel\repondeur\app\src\main\AndroidManifest.xml:7:5-77
+13-->D:\Daniel\repondeur\app\src\main\AndroidManifest.xml:7:22-74
+14    <uses-permission android:name="android.permission.CALL_PHONE" />
+14-->D:\Daniel\repondeur\app\src\main\AndroidManifest.xml:8:5-69
+14-->D:\Daniel\repondeur\app\src\main\AndroidManifest.xml:8:22-66
+15    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+15-->D:\Daniel\repondeur\app\src\main\AndroidManifest.xml:9:5-72
+15-->D:\Daniel\repondeur\app\src\main\AndroidManifest.xml:9:22-69
+16    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+16-->D:\Daniel\repondeur\app\src\main\AndroidManifest.xml:10:5-78
+16-->D:\Daniel\repondeur\app\src\main\AndroidManifest.xml:10:22-75
+17
+18    <application
+18-->D:\Daniel\repondeur\app\src\main\AndroidManifest.xml:12:5-36:19
+19        android:allowBackup="true"
+19-->D:\Daniel\repondeur\app\src\main\AndroidManifest.xml:13:9-35
+20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+20-->[androidx.core:core:1.5.0] C:\Users\groslead\.gradle\caches\transforms-2\files-2.1\cc5e9dcdc56dc39042f72c501235e83f\core-1.5.0\AndroidManifest.xml:24:18-86
+21        android:debuggable="true"
+22        android:extractNativeLibs="false"
+23        android:icon="@mipmap/ic_launcher"
+23-->D:\Daniel\repondeur\app\src\main\AndroidManifest.xml:14:9-43
+24        android:label="@string/app_name"
+24-->D:\Daniel\repondeur\app\src\main\AndroidManifest.xml:15:9-41
+25        android:roundIcon="@mipmap/ic_launcher_round"
+25-->D:\Daniel\repondeur\app\src\main\AndroidManifest.xml:16:9-54
+26        android:supportsRtl="true"
+26-->D:\Daniel\repondeur\app\src\main\AndroidManifest.xml:17:9-35
+27        android:theme="@style/Theme.Repondeur" >
+27-->D:\Daniel\repondeur\app\src\main\AndroidManifest.xml:18:9-47
+28        <activity
+28-->D:\Daniel\repondeur\app\src\main\AndroidManifest.xml:19:9-26:20
+29            android:name="com.example.repondeur.MainActivity"
+29-->D:\Daniel\repondeur\app\src\main\AndroidManifest.xml:20:13-41
+30            android:exported="true" >
+30-->D:\Daniel\repondeur\app\src\main\AndroidManifest.xml:21:13-36
+31            <intent-filter>
+31-->D:\Daniel\repondeur\app\src\main\AndroidManifest.xml:22:13-25:29
+32                <action android:name="android.intent.action.MAIN" />
+32-->D:\Daniel\repondeur\app\src\main\AndroidManifest.xml:23:17-69
+32-->D:\Daniel\repondeur\app\src\main\AndroidManifest.xml:23:25-66
+33
+34                <category android:name="android.intent.category.LAUNCHER" />
+34-->D:\Daniel\repondeur\app\src\main\AndroidManifest.xml:24:17-77
+34-->D:\Daniel\repondeur\app\src\main\AndroidManifest.xml:24:27-74
+35            </intent-filter>
+36        </activity>
+37
+38        <service
+38-->D:\Daniel\repondeur\app\src\main\AndroidManifest.xml:28:9-35:19
+39            android:name="com.example.repondeur.CallHandlerService"
+39-->D:\Daniel\repondeur\app\src\main\AndroidManifest.xml:29:13-47
+40            android:exported="true"
+40-->D:\Daniel\repondeur\app\src\main\AndroidManifest.xml:31:13-36
+41            android:permission="android.permission.BIND_INCALL_SERVICE" >
+41-->D:\Daniel\repondeur\app\src\main\AndroidManifest.xml:30:13-72
+42            <intent-filter>
+42-->D:\Daniel\repondeur\app\src\main\AndroidManifest.xml:32:13-34:29
+43                <action android:name="android.telecom.InCallService" />
+43-->D:\Daniel\repondeur\app\src\main\AndroidManifest.xml:33:17-71
+43-->D:\Daniel\repondeur\app\src\main\AndroidManifest.xml:33:25-69
+44            </intent-filter>
+45        </service>
+46    </application>
+47
+48</manifest>

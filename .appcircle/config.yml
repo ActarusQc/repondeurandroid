@@ -1,0 +1,15 @@
+version: 1.0
+workflows:
+  android_build:
+    environment:
+      java_version: 8
+      android_sdk: 30
+      gradle_version: 4.2.2
+    steps:
+      - checkout
+      - android/build:
+          module: app
+          build_type: debug
+          gradle_task: assembleDebug
+    artifacts:
+      - app/build/outputs/apk/debug/*.apk 
